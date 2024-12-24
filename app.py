@@ -13,7 +13,7 @@ from flask_cors import CORS
 
 
 app = Flask(__name__, static_folder='static')
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://groupthree:sfb31oTxBAToN04gFlsyk6X2ERbCp2oD@dpg-csvggau8ii6s73esk4ng-a.oregon-postgres.render.com/electrohub_db_5djp'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://groupthree:group3@localhost/electrohub_db_5djp'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'supersecretkey'
 
