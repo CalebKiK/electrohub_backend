@@ -27,7 +27,6 @@ swaggerui_blueprint = get_swaggerui_blueprint(
     config={  # Swagger UI config overrides
         'app_name': "electrohub_api_documentation"
     },
-   
 )
 
 app.register_blueprint(swaggerui_blueprint, url_prefix = SWAGGER_URL)
