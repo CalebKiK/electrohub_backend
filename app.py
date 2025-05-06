@@ -13,9 +13,9 @@ from flask_cors import CORS
 
 
 app = Flask(__name__, static_folder='static')
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'postgresql://groupthree:group3@localhost/electrohub')
+# app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'postgresql://groupthree:group3@localhost/electrohub')
 # app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'postgresql://groupthree:group3@localhost/electrohub_db_5djp')
-# app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'postgresql://my_database_42ij_user:vGfkHyIIG10ALzAllmKmFGenbUl86cdC@dpg-cvrbe2ruibrs73dogna0-a.oregon-postgres.render.com/electrohub_db')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'postgresql://my_database_n8gp_user:JL8lwYZB4JmwiQL1bKZdPomrBxf8lCJv@dpg-d0d3173uibrs73ds3jag-a.oregon-postgres.render.com/electrohub_db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'supersecretkey'
 
