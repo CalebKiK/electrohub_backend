@@ -1,8 +1,8 @@
-"""Database restored
+"""Create new database
 
-Revision ID: 7692677d3fe7
+Revision ID: 9a90c028c80d
 Revises: 
-Create Date: 2025-06-09 21:12:21.651137
+Create Date: 2025-07-24 20:34:50.149677
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 from sqlalchemy.dialects import postgresql
 
 # revision identifiers, used by Alembic.
-revision = '7692677d3fe7'
+revision = '9a90c028c80d'
 down_revision = None
 branch_labels = None
 depends_on = None
