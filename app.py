@@ -639,6 +639,16 @@ def best_sellers_items():
     return jsonify({"message": "No offer items in Best Sellers section."}, 404)
 
 
+@app.route('/test-db')
+def test_db():
+    try:
+        # Try to connect and execute a simple query
+        db.session.execute(db.text('SELECT 1'))
+        return 'Database connection successful!'
+    except Exception as e:
+        return f'Database connection failed: {str(e)}'
+
+
 if __name__== '__main__':
     port = int(os.environ.get("PORT", 5555)) 
     app.run(host="0.0.0.0", port=port, debug=True)
